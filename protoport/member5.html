@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body, h1, h2, h3, h4, h5, h6 {
+      font-family: "Montserrat", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    * {
+      box-sizing: border-box;
+    }
+
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #333;
+      color: white;
+      font-size: 30px;
+      width: 50px;
+      height: 50px;
+      border: none;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      z-index: 1000;
+    }
+    .back-button:hover {
+      background-color: #444;
+    }
+
+    .bgimg {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('/images/profile_girl.jpg');
+      min-height: 100%;
+    }
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .portfolio-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .portfolio-grid img {
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .button {
+      padding: 12px 24px;
+      margin-top: 20px;
+      border: none;
+      background-color: lightgray;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .button:hover {
+      background-color: gray;
+    }
+
+    .about-section {
+      padding: 50px 0;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .contact-section {
+      padding: 50px 0;
+      background-color: #f4f4f4;
+    }
+
+    .footer {
+      padding: 50px 0;
+      background-color: #ffffff;
+      color: white;
+      text-align: center;
+    }
+
+    .social-icons a {
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      border-radius: 50%;
+      background-color: #555;
+    }
+    .social-icons a:hover {
+      background-color: #222;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+
+    .profile-img {
+      width: 250px; 
+      height: 250px; 
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 20px 0;
+    }
+
+    @media (max-width: 768px) {
+      .portfolio-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="sidebar">
+  <div class="bgimg"></div>
+</nav>
+
+<div class="main-content">
+
+  <header>
+    <h1>Huge Jashley Novilla</h1>
+    <p>Programming</p>
+    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462646009_1092745342488634_1322540061333502856_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeFpSS6O8vArOjxUAR1tcRWXjLOX67hHT9-Ms5fruEdP31I4CjNIZHkKf4wuDEA3d5G5I5RMBRAjTWVjbzEWa86n&_nc_ohc=0iNDh6ohVkwQ7kNvgFwrdq5&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QE1PUCC_wIAuo0ii_AtMuv4B1VIvNraUMoKWUBed6zd6g&oe=676EAC60" alt="Profile" class="profile-img">
+    <br>
+    <button class="button">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+  </header>
+
+  <div class="about-section">
+    <h2>About</h2>
+    <p>I’m  Huge Jashley Novilla, a dynamic and innovative programmer with a passion for crafting efficient and impactful solutions in the tech world. As a self-motivated learner, I’ve mastered a variety of tools, technologies, and programming languages that empower me to handle diverse challenges with confidence and creativity. </p>
+    <p>From developing sleek and responsive front-end designs to architecting robust back-end systems, I thrive in creating seamless experiences for users. My expertise spans full-stack development, including proficiency in frameworks, databases, and cloud solutions. Whether it’s building intuitive interfaces or optimizing system performance, I’m committed to delivering excellence at every step.</p>
+    <p>Adaptable and always curious, I enjoy diving into new technologies and expanding my skill set. I believe in the power of collaboration, whether it’s brainstorming with a team or contributing to innovative open-source projects. I’m driven by the desire to learn, grow, and make a meaningful impact through technology.</p>
+    <p>When I’m not coding, you’ll find me exploring new programming challenges, enhancing my skills, or experimenting with creative tech solutions. Let’s connect and bring ideas to life together!</p>
+    <h3>My Skills</h3>
+    <p>Communication Skills</p>
+    <div class="progress-bar" style="background-color: lightgrey;">
+      <div style="width: 75%; background-color: darkgrey; padding: 5px;">75%</div>
+    </div>
+    <p>Driving Skills</p>
+    <div class="progress-bar" style="background-color: lightgrey;">
+      <div style="width: 100%; background-color: darkgrey; padding: 5px;">100%</div>
+    </div>
+    <p>Programming Skills</p>
+    <div class="progress-bar" style="background-color: lightgrey;">
+      <div style="width: 20%; background-color: darkgrey; padding: 5px;">20%</div>
+    </div>
+    <p>Gaming Skills</p>
+    <div class="progress-bar" style="background-color: lightgrey;">
+      <div style="width: 60%; background-color: darkgrey; padding: 5px;">60%</div>
+    </div>
+  </div>
+
+  <div class="contact-section">
+    <h2>Contact Me</h2>
+    <div>
+      <p><i class="fa fa-map-marker"></i> General trias</p>
+      <p><i class="fa fa-phone"></i> Phone: 09695585936</p>
+      <p><i class="fa fa-envelope"></i> Email: hugenovilla836@gmail.com</p>
+    </div>
+    <form action="/action_page.php" target="_blank">
+      <input type="text" placeholder="Name" required name="Name">
+      <input type="text" placeholder="Email" required name="Email">
+      <input type="text" placeholder="Subject" required name="Subject">
+      <textarea placeholder="Message" required name="Message"></textarea>
+      <button class="button" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+
+  <div class="footer">
+    <div class="social-icons">
+      <a href="https://www.facebook.com" class="social-icon"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.twitter.com" class="social-icon"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.linkedin.com" class="social-icon"><i class="fa fa-linkedin"></i></a>
+      <a href="https://www.github.com" class="social-icon"><i class="fa fa-github"></i></a>
+    </div>
+    <a href="./index.html"><button class="back-button">X</button></a>
+  </div>
+</div>
+
+</body>
+</html>

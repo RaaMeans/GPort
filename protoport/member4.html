@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body, h1, h2, h3, h4, h5, h6 {
+      font-family: "Montserrat", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    * {
+      box-sizing: border-box;
+    }
+
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #333;
+      color: white;
+      font-size: 30px;
+      width: 50px;
+      height: 50px;
+      border: none;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      z-index: 1000;
+    }
+    .back-button:hover {
+      background-color: #444;
+    }
+
+    .bgimg {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('/images/profile_girl.jpg');
+      min-height: 100%;
+    }
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .portfolio-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .portfolio-grid img {
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .button {
+      padding: 12px 24px;
+      margin-top: 20px;
+      border: none;
+      background-color: lightgray;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .button:hover {
+      background-color: gray;
+    }
+
+    .about-section {
+      padding: 50px 0;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .contact-section {
+      padding: 50px 0;
+      background-color: #f4f4f4;
+    }
+
+    .footer {
+      padding: 50px 0;
+      background-color: #ffffff;
+      color: white;
+      text-align: center;
+    }
+
+    .social-icons a {
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      border-radius: 50%;
+      background-color: #555;
+    }
+    .social-icons a:hover {
+      background-color: #222;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+
+    .profile-img {
+      width: 250px; 
+      height: 250px; 
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 20px 0;
+    }
+
+    @media (max-width: 768px) {
+      .portfolio-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="sidebar">
+  <div class="bgimg"></div>
+</nav>
+
+<div class="main-content">
+
+  <header>
+    <h1>Flord Jannsen Quijote</h1>
+    <p>Full Stack Web Developer</p>
+    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462576720_1619722202256920_7428330970222163200_n.jpg?stp=dst-jpg_s480x480&_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGxOxEeuww3xHplfgrASsfrbZZq2RcJp8ptlmrZFwmnylLZ5zkT_8uoulblmfEu-pxNJWdeArcK8SNj5adersPr&_nc_ohc=3KTkpjachnoQ7kNvgEeYPSm&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QHDlFJ92ugX7c3caw0pR2zDfubEudguVm7KdN0HKbXKww&oe=676E97D9" alt="Profile" class="profile-img">
+    <br>
+    <button class="button">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+  </header>
+
+  <div class="about-section">
+    <h2>About</h2>
+    <p>I am a dedicated programmer with a passion for technology and problem-solving, always seeking to innovate and improve processes. With a background in coding and development, I thrive in creating seamless, efficient solutions. Outside of my technical expertise, I have a strong interest in voice acting, where I bring characters and narratives to life through my vocal versatility. I am excited to merge my skills in both fields, combining the analytical mindset of a programmer with the creativity and expression of a voice actor. My goal is to expand my horizons, pursue opportunities in voice acting, and contribute unique, engaging performances to diverse projects.</p>
+    <h3>My Skills</h3>
+    <p>Web Development</p>
+    <div class="progress-bar" style="background-color: lightgrey;">
+      <div style="width: 80%; background-color: darkgrey; padding: 5px;">80%</div>
+    </div>
+    <p>Guitar</p>
+    <div class="progress-bar" style="background-color: lightgrey;">
+      <div style="width: 80%; background-color: darkgrey; padding: 5px;">80%</div>
+    </div>
+    <p>Singing </p>
+    <div class="progress-bar" style="background-color: lightgrey;">
+      <div style="width: 99%; background-color: darkgrey; padding: 5px;">99%</div>
+    </div>
+    <p>Trashtalk </p>
+    <div class="progress-bar" style="background-color: lightgrey;">
+      <div style="width: 0%; background-color: darkgrey; padding: 5px;">0%</div>
+    </div>
+    <p>Delivery Skills</p>
+    <div class="progress-bar" style="background-color: lightgrey;">
+      <div style="width: 99%; background-color: darkgrey; padding: 5px;">99%</div>
+    </div>
+  </div>
+
+  <div class="contact-section">
+    <h2>Contact Me</h2>
+    <div>
+      <p><i class="fa fa-map-marker"></i> Las Pinas, Philippines</p>
+      <p><i class="fa fa-phone"></i> Phone: +00 151515</p>
+      <p><i class="fa fa-envelope"></i> Email: mail@mail.com</p>
+    </div>
+    <form action="/action_page.php" target="_blank">
+      <input type="text" placeholder="Name" required name="Name">
+      <input type="text" placeholder="Email" required name="Email">
+      <input type="text" placeholder="Subject" required name="Subject">
+      <textarea placeholder="Message" required name="Message"></textarea>
+      <button class="button" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+
+  <div class="footer">
+    <div class="social-icons">
+      <a href="https://www.facebook.com" class="social-icon"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.twitter.com" class="social-icon"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.linkedin.com" class="social-icon"><i class="fa fa-linkedin"></i></a>
+      <a href="https://www.github.com" class="social-icon"><i class="fa fa-github"></i></a>
+    </div>
+    <a href="./index.html"><button class="back-button">X</button></a>
+  </div>
+</div>
+
+</body>
+</html>

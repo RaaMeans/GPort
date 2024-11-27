@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body, h1, h2, h3, h4, h5, h6 {
+      font-family: "Montserrat", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    * {
+      box-sizing: border-box;
+    }
+
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #333;
+      color: white;
+      font-size: 30px;
+      width: 50px;
+      height: 50px;
+      border: none;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      z-index: 1000;
+    }
+    .back-button:hover {
+      background-color: #444;
+    }
+
+    .bgimg {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('/images/profile_girl.jpg');
+      min-height: 100%;
+    }
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .portfolio-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .portfolio-grid img {
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .button {
+      padding: 12px 24px;
+      margin-top: 20px;
+      border: none;
+      background-color: lightgray;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .button:hover {
+      background-color: gray;
+    }
+
+    .about-section {
+      padding: 50px 0;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .contact-section {
+      padding: 50px 0;
+      background-color: #f4f4f4;
+    }
+
+    .footer {
+      padding: 50px 0;
+      background-color: #ffffff;
+      color: white;
+      text-align: center;
+    }
+
+    .social-icons a {
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      border-radius: 50%;
+      background-color: #555;
+    }
+    .social-icons a:hover {
+      background-color: #222;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+
+    .profile-img {
+      width: 250px; 
+      height: 250px; 
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 20px 0;
+    }
+
+    @media (max-width: 768px) {
+      .portfolio-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="sidebar">
+  <div class="bgimg"></div>
+</nav>
+
+<div class="main-content">
+
+  <header>
+    <h1>Louise Andrei Salvador</h1>
+    <p>Web Developer</p>
+    <img src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.15752-9/466875267_1982232198856950_1549431599152310269_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGHJkUFg3Mzxk85OYXAVyg_OS2SHvsm4ng5LZIe-ybieGV9v_-VRMAx7_hw1BwRQVC6GS_n5_MYru95bURkw8nZ&_nc_ohc=1qBLUc1_mncQ7kNvgE-LCmk&_nc_zt=23&_nc_ht=scontent.fmnl8-1.fna&oh=03_Q7cD1QGY9mOctwF5A3E5yVSS3uXFFkI1Fyt5SOn7RFjQU3wAGA&oe=676EB520" alt="Profile" class="profile-img">
+    <br>
+    <button class="button">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+  </header>
+
+  <div class="about-section">
+    <h2>About</h2>
+    <p>Hello! I’m Louise Andrei Salvador, a versatile and passionate programmer with a diverse skill set. As a self-taught developer, I’ve cultivated a broad range of expertise across multiple technologies and programming languages. Whether it's front-end web development, back-end systems, data analysis, or app development, I love taking on challenges and finding creative solutions.</p>
+    <p>I pride myself on being a "jack of all trades," with a unique ability to adapt quickly to new tools, frameworks, and coding environments. From building sleek user interfaces with HTML, CSS, and JavaScript to creating powerful backend systems with Python, Java, or Node.js, I’m always up for exploring new territories in the programming world. My expertise extends to databases, cloud platforms, automation, and more — ensuring that I can tackle full-stack development with ease.</p>
+    <p>Beyond the code, I believe in collaboration and continuous learning. I enjoy working in team settings, brainstorming ideas, and contributing to projects that make a difference. Whether I’m improving existing systems, learning new technologies, or optimizing processes, my goal is always to deliver high-quality solutions that meet both user needs and business objectives.</p>
+    <h3>My Skills</h3>
+    <p>Programming</p>
+    <div class="progress-bar" style="background-color: lightgrey;">
+      <div style="width: 70%; background-color: darkgrey; padding: 5px;">70%</div>
+    </div>
+    <p>Web Design</p>
+    <div class="progress-bar" style="background-color: lightgrey;">
+      <div style="width: 75%; background-color: darkgrey; padding: 5px;">75%</div>
+    </div>
+    <p>Photoshop</p>
+    <div class="progress-bar" style="background-color: lightgrey;">
+      <div style="width: 80%; background-color: darkgrey; padding: 5px;">80%</div>
+    </div>
+  </div>
+
+  <div class="contact-section">
+    <h2>Contact Me</h2>
+    <div>
+      <p><i class="fa fa-map-marker"></i> Pasay City, Philippines</p>
+      <p><i class="fa fa-phone"></i> Phone: 0992424345</p>
+      <p><i class="fa fa-envelope"></i> Email: salvadorlouiseandrei@gmail.com</p>
+    </div>
+    <form action="/action_page.php" target="_blank">
+      <input type="text" placeholder="Name" required name="Name">
+      <input type="text" placeholder="Email" required name="Email">
+      <input type="text" placeholder="Subject" required name="Subject">
+      <textarea placeholder="Message" required name="Message"></textarea>
+      <button class="button" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+
+  <div class="footer">
+    <div class="social-icons">
+      <a href="https://www.facebook.com" class="social-icon"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.twitter.com" class="social-icon"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.linkedin.com" class="social-icon"><i class="fa fa-linkedin"></i></a>
+      <a href="https://www.github.com" class="social-icon"><i class="fa fa-github"></i></a>
+    </div>
+    <a href="./index.html"><button class="back-button">X</button></a>
+  </div>
+</div>
+
+</body>
+</html>

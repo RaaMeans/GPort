@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Group Portfolio</title>
+  <style>
+    body, h1, h2, h3, h4, h5 {
+      font-family: 'Arial', sans-serif;
+    }
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      padding: 50px 0;
+      background-color: #333;
+      color: white;
+    }
+    header h1 {
+      font-size: 2.5em;
+    }
+    .nav {
+      display: flex;
+      justify-content: center;
+      background-color: #444;
+      padding: 15px 0;
+    }
+    .nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      margin: 0 10px;
+    }
+    .nav a:hover {
+      background-color: #555;
+    }
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 50px 0;
+    }
+    a {
+      text-decoration: none;
+    }
+    .team-member {
+      width: 280px;
+      margin: 20px;
+      text-align: center;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+    .team-member:hover {
+      transform: scale(1.05);
+    }
+    .team-member img {
+      width: 100%;
+      border-radius: 50%;
+      height: 250px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .team-member h4 {
+      margin: 10px 0;
+      color: #333;
+    }
+    .team-member p {
+      color: #777;
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      margin: 0 auto;
+    }
+    .contact-form label {
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      padding: 15px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background-color: #555;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Group Portfolio</h1>
+</header>
+
+<nav class="nav">
+  <a href="#team">Our Team</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+  <section id="team">
+    <h2>Our Team</h2>
+    <div class="team">
+      <a href="member1.html" class="team-member">
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462559429_2060861854368352_2913476697845522462_n.jpg?stp=dst-jpg_s552x414_tt6&_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGaicqIfx2RQeIP061gLU8PZ2QaXKkvkSVnZBpcqS-RJXy8cAsNWTQo0I4fBRvN4Il9FqCSyysTOkkX542Wfob7&_nc_ohc=zIPPHOsdfi8Q7kNvgHooRF4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QHF3edMC7Qhl0IaIPQPEx_RqVQl2rmm4W5qKpTVLAPn3g&oe=676E9086" alt="John Marco Ardina">
+        <h4>John Marco Ardina</h4>
+        <p>Role: Full Stack Web Developer</p>
+        <p>"Mataas tumalon, Malalim bumaon".</p>
+      </a>
+      <a href="member2.html" class="team-member">
+        <img src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.15752-9/466875267_1982232198856950_1549431599152310269_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGHJkUFg3Mzxk85OYXAVyg_OS2SHvsm4ng5LZIe-ybieGV9v_-VRMAx7_hw1BwRQVC6GS_n5_MYru95bURkw8nZ&_nc_ohc=1qBLUc1_mncQ7kNvgE-LCmk&_nc_zt=23&_nc_ht=scontent.fmnl8-1.fna&oh=03_Q7cD1QGY9mOctwF5A3E5yVSS3uXFFkI1Fyt5SOn7RFjQU3wAGA&oe=676EB520" alt="Louise Andrei Salvador">
+        <h4>Louise Andrei Salvador</h4>
+        <p>Role: Web Developer</p>
+        <p>"A jack of all trades is a master of none, but oftentimes better than a master of one"</p>
+      </a>
+      <a href="member3.html" class="team-member">
+        <img src="https://scontent.fmnl8-2.fna.fbcdn.net/v/t1.15752-9/467456755_879672307682890_2447545821934492552_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeH0JJpou-LhmhN-brTG6u0jxrximLRp5ITGvGKYtGnkhFbCYR-EhR86MOVTdN1lxx2nrptKLS-PBks6pP1Tssca&_nc_ohc=_UIOWEA2N8EQ7kNvgG9f5wC&_nc_zt=23&_nc_ht=scontent.fmnl8-2.fna&oh=03_Q7cD1QHEdPWbyCje3ynTenWyaeEXW46IamLDqZ8FmTHdgnXwqQ&oe=676E9C13" alt="Jeremy Ian Limson">
+        <h4>Jeremy Ian Limson</h4>
+        <p>Role: Web Designer</p>
+        <p>"I choose a lazy person to do a hard job, because a lazy person will find an easy way to do it."</p>
+      </a>
+      <a href="member4.html" class="team-member">
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462576720_1619722202256920_7428330970222163200_n.jpg?stp=dst-jpg_s480x480&_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGxOxEeuww3xHplfgrASsfrbZZq2RcJp8ptlmrZFwmnylLZ5zkT_8uoulblmfEu-pxNJWdeArcK8SNj5adersPr&_nc_ohc=3KTkpjachnoQ7kNvgEeYPSm&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QHDlFJ92ugX7c3caw0pR2zDfubEudguVm7KdN0HKbXKww&oe=676E97D9" alt="Flord Jannsen Quijote">
+        <h4>Flord Jannsen Quijote</h4>
+        <p>Role: Full Stack Web Developer</p>
+        <p>"Don't stop when you're tired, stop when you're done."</p>
+      </a>
+      <a href="member5.html" class="team-member">
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462646009_1092745342488634_1322540061333502856_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeFpSS6O8vArOjxUAR1tcRWXjLOX67hHT9-Ms5fruEdP31I4CjNIZHkKf4wuDEA3d5G5I5RMBRAjTWVjbzEWa86n&_nc_ohc=0iNDh6ohVkwQ7kNvgFwrdq5&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QE1PUCC_wIAuo0ii_AtMuv4B1VIvNraUMoKWUBed6zd6g&oe=676EAC60" alt="Huge Jashley Novilla">
+        <h4>Huge Jashley Novilla</h4>
+        <p>Role: Programmer</p>
+        <p>"FAILURE IS SIMPLY THE OPPORTUNITY TO BEGIN AGAIN, THIS TIME MORE INTELLIGENTLY."</p>
+      </a>
+      <a href="member6.html" class="team-member">
+        <img src="https://scontent.fmnl8-2.fna.fbcdn.net/v/t1.15752-9/467459374_3321963297937200_965700126944246379_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeE81Gi2vj-TbFBR5kkCvfyntGH6uW2_Ram0Yfq5bb9FqYd9ITOdp16hErTBto2WFbAqF5GRUqrxJTZJhaCkT-sw&_nc_ohc=xIYXRDuSuBcQ7kNvgGBJrke&_nc_zt=23&_nc_ht=scontent.fmnl8-2.fna&oh=03_Q7cD1QHZHKQAmdaa02dbpN2ggSI__XvyrUwY4GFKOcPrPj-CuQ&oe=676EB6D3" alt="Mark Jasper Dizon">
+        <h4>Mark Jasper Dizon</h4>
+        <p>Role: Programmer</p>
+        <p>"People say nothing is imposibble, but I do nothing every day."</p>
+      </a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2024 Group Portfolio. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
